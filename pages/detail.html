@@ -10,6 +10,9 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="styles/detail.css">
 
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Detail</title>
   </head>
   <body>
@@ -33,6 +36,19 @@
             </li>
             <li class="nav-item ">
               <a class="nav-link active" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img src="img/Ellipse 1.png">
+              </a>
+            </li>
+            <li class="nav-item-admin">
+              <a class="nav-link" href="#">Rana</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="bx bx-shopping-bag"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -70,42 +86,82 @@
             <div class="products-shade">SHADE</div>
             <div class="products-select-shade">Select Shade</div>
             <div class="row">
-              <div class="col-2">
+              <div class="col-1">
                 <a href="#" class="component-products d-block">
                   <div class="products-img">
                     <img src="img/shade_1.png" class="img-fluid">
                   </div>
                 </a>
               </div>
-              <div class="col-2">
+              <div class="col-1">
                 <a href="#" class="component-products d-block">
                   <div class="products-img">
                     <img src="img/shade_2.png" class="img-fluid">
                   </div>
                 </a>
               </div>
-              <div class="col-2">
+              <div class="col-1">
                 <a href="#" class="component-products d-block">
                   <div class="products-img">
                     <img src="img/shade_3.png" class="img-fluid">
                   </div>
                 </a>
               </div>
-              <div class="col-2">
+              <div class="col-1">
                 <a href="#" class="component-products d-block">
                   <div class="products-img">
                     <img src="img/shade_4.png" class="img-fluid">
                   </div>
                 </a>
               </div>
-              <div class="col-2">
+              <div class="col-1">
                 <a href="#" class="component-products d-block">
                   <div class="products-img">
                     <img src="img/shade_5.png" class="img-fluid">
                   </div>
                 </a>
               </div>
+              <div class="col-1">
+                <a href="#" class="component-products d-block">
+                  <div class="products-img">
+                    <img src="img/shade_6.png" class="img-fluid">
+                  </div>
+                </a>
+              </div>
+              <div class="col-1"></div>
+          <div class="col-7" my-auto>
+            <div class="products-quantity">Quantity</div>
+            <div class="wrapper">
+              <span class="minus">-</span>
+              <span class="num">01</span>
+              <span class="plus">+</span>
             </div>
+            <script>
+
+              const plus = document.querySelector(".plus"),
+               minus = document.querySelector(".minus"),
+               num = document.querySelector(".num");
+
+               let a = 1;
+
+               plus.addEventListener("click", ()=>{
+                a++;
+                a = (a < 10) ? "0" + a : a;
+                num.innerText = a;
+                console.log(a);
+               });
+
+               minus.addEventListener("click", ()=>{
+                if(a > 1){
+                  a--;
+                  a = (a < 10) ? "0" + a : a;
+                num.innerText = a;
+                }
+               });
+            </script>
+            <br><br><br>
+            </div>
+            
             </div>
           </div>
           </div>

@@ -4,8 +4,8 @@
     font-size: 30px;
 }
 
-    .nav-item {
-    font-family: 'Poppins';
+.nav-item {
+    font-family: 'Montserrat';
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -22,6 +22,35 @@
 
 .nav-link:hover {
     color: #901CEB !important;
+}
+
+.nav-link img {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 1213px;
+    top: 18px;
+}
+
+.nav-item-admin {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 1255px;
+    top: 16px;
+
+    font-family: 'Montserrat';
+    font-size: 18px;
+
+    color: #000000;
+}
+
+.nav-item i {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 1310px;
+    top: 25px;
 }
 
 /* Product Details */
@@ -82,8 +111,8 @@
 
 .product-details .stars img {
     position: absolute;
-    width: 200px;
-    height: 38px;
+    width: 150px;
+    height: 30px;
     left: 400px;
     top: 240px;
 }
@@ -92,8 +121,8 @@
     position: absolute;
     width: 39px;
     height: 30px;
-    left: 608px;
-    top: 245px;
+    left: 570px;
+    top: 240px;
 
     font-family: 'Montserrat';
     font-weight: 700;
@@ -195,6 +224,59 @@
     left: 669px;
     top: 400px;
 }
+
+
+.products-quantity {
+  position: absolute;
+  width: 101px;
+  height: 30px;
+  left: 405px;
+  top: 450px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #6F6F6F;
+}
+
+.body {
+  height: ;
+}
+
+.wrapper {
+  position: absolute;
+  width: 140px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 669px;
+  top: 450px;
+
+  background: #D9D9D9;
+  border-radius: 5px;
+}
+
+.wrapper span {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.wrapper span.num {
+  font-size: 18px;
+  border-right: 2px solid rgba(0,0,0,0.2);
+  border-left: 2px solid rgba(0,0,0,0.2);
+  pointer-events: none;
+}
+
+
+
 
 /* Tutup Product Details */
 
